@@ -1,0 +1,14 @@
+# Space Shooter Game Requirements
+# Python游戏依赖包
+
+# 核心依赖
+pygame>=2.0.0
+
+# 可选依赖（用于开发和测试）
+# numpy>=1.19.0  # 如果需要进行高级数学运算
+# pytest>=6.0.0  # 测试框架
+# black>=21.0.0  # 代码格式化
+# flake8>=3.9.0  # 代码检查
+
+# 最低Python版本要求
+python>=3.6
