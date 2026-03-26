@@ -1,0 +1,71 @@
+# GitHub Pages 配置
+title: "太空射击游戏"
+description: "一个使用HTML5 Canvas开发的2D太空射击游戏"
+baseurl: "/space-shooter-game" # 项目名称
+url: "https://zjl4616.github.io" # 你的GitHub用户名
+
+# 构建设置
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# 游戏配置
+game:
+  name: "太空射击游戏"
+  version: "1.0.0"
+  author: "张金龙"
+  github: "zjl4616/space-shooter-game"
+
+# 排除文件（不包含在Pages构建中）
+exclude:
+  - .github/
+  - .git/
+  - .gitignore
+  - README.md
+  - WEB_GAME_README.md
+  - game_guide.md
+  - requirements.txt
+  - run_game.sh
+  - space_shooter.py
+  - start_web_game.py
+  - test_game.py
+  - LICENSE
+
+# 包含文件（包含在Pages中）
+include:
+  - space_shooter_web.html
+  - index.html
+  - assets/
+  - images/
+
+# 默认设置
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      permalink: pretty
+
+# Markdown处理
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# 构建选项
+highlighter: rouge
+future: false
+
+# 搜索引擎优化
+google_analytics: # 如果需要可以添加GA ID
+twitter:
+  username: # 如果需要可以添加Twitter用户名
+
+# 社交链接
+github_username: zjl4616
